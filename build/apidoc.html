@@ -61,12 +61,101 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.conventional-changelog">module conventional-changelog</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.conventional-changelog.conventional-changelog">
+            function <span class="apidocSignatureSpan"></span>conventional-changelog
+            <span class="apidocSignatureSpan">(options, context, gitRawCommitsOpts, parserOpts, writerOpts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.conventional-changelog.toString">
+            function <span class="apidocSignatureSpan">conventional-changelog.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.conventional-changelog.toString">module conventional-changelog.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.conventional-changelog.toString.toString">
+            function <span class="apidocSignatureSpan">conventional-changelog.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.conventional-changelog" id="apidoc.module.conventional-changelog">module conventional-changelog</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.conventional-changelog.conventional-changelog" id="apidoc.element.conventional-changelog.conventional-changelog">
+        function <span class="apidocSignatureSpan"></span>conventional-changelog
+        <span class="apidocSignatureSpan">(options, context, gitRawCommitsOpts, parserOpts, writerOpts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function conventionalChangelog(options, context, gitRawCommitsOpts, parserOpts, writerOpts) {
+  options.warn = options.warn || function() {};
+
+  if (options.preset) {
+    try {
+      options.config = require(&#x27;conventional-changelog-&#x27; + options.preset.toLowerCase());
+    } catch (err) {
+      options.warn(&#x27;Preset: &#x22;&#x27; + options.preset + &#x27;&#x22; does not exist&#x27;);
+    }
+  }
+
+  return conventionalChangelogCore(options, context, gitRawCommitsOpts, parserOpts, writerOpts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.conventional-changelog.toString" id="apidoc.element.conventional-changelog.toString">
+        function <span class="apidocSignatureSpan">conventional-changelog.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.conventional-changelog.toString" id="apidoc.module.conventional-changelog.toString">module conventional-changelog.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.conventional-changelog.toString.toString" id="apidoc.element.conventional-changelog.toString.toString">
+        function <span class="apidocSignatureSpan">conventional-changelog.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
