@@ -1,6 +1,6 @@
 # npmdoc-conventional-changelog
 
-#### api documentation for  [conventional-changelog (v1.1.3)](https://github.com/conventional-changelog/conventional-changelog#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-conventional-changelog.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-conventional-changelog) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-conventional-changelog.svg)](https://travis-ci.org/npmdoc/node-npmdoc-conventional-changelog)
+#### basic api documentation for  [conventional-changelog (v1.1.3)](https://github.com/conventional-changelog/conventional-changelog#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-conventional-changelog.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-conventional-changelog) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-conventional-changelog.svg)](https://travis-ci.org/npmdoc/node-npmdoc-conventional-changelog)
 
 #### Generate a changelog from git metadata
 
@@ -92,7 +92,8 @@
         "test": "npm run-script lint && mocha --timeout 30000",
         "test-windows": "mocha --timeout 30000"
     },
-    "version": "1.1.3"
+    "version": "1.1.3",
+    "bin": {}
 }
 ```
 
